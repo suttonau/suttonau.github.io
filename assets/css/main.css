@@ -650,10 +650,13 @@ input, select, textarea {
 		position: relative;
 	}
 
+	.about {
+		align-items: center;
+		justify-content: center;
+	}
+
 		.image:before {
 			pointer-events: none;
-			background-image: url("../../images/overlay.png");
-			background-color: rgba(19, 21, 25, 0.5);
 			border-radius: 4px;
 			content: '';
 			display: block;
@@ -668,6 +671,8 @@ input, select, textarea {
 		.image img {
 			border-radius: 4px;
 			display: block;
+			align-self: center;
+			justify-content: center;
 		}
 
 		.image.left, .image.right {
@@ -709,6 +714,22 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+
+			.image.about {
+				display: block;
+				padding-left: 2.5rem;
+				padding-right: 2.5rem;
+				padding-bottom: 2.5rem;
+				padding-top: 2.5rem;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+			}
+
+			.image.about img {
+				width: 100%;
+			}
+
 
 		@media screen and (max-width: 736px) {
 
